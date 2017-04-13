@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DARIA</title>
+</head>
+<body>
+    <div id="login-form-holder">
+        @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+        {
+            <div>
+                <span>Login:</span>
+                <span>@Html.TextArea("Login", "entityId")</span>
+            </div>
+            <div>
+                <span><input type="submit" value="SUBMIT" /></span>
+            </div>
+        }
+    </div>
+</body>
+</html>

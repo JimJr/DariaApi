@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>index</title>
+</head>
+<body>
+    <div>
+        <form id="login-form" method="post" action="~/Areas/Page/Controllers/Login">
+            <div class="login-form-username">
+                <label for="username">Username</label>
+                <input id="user" name="username" type="text" placeholder="Username" />
+            </div>
+
+            <div class="login-form-entityid">
+                <!--add is-invalid class to show error-->
+                <label for="entityid">Username</label>
+                <input id="entityid" name="entityid" type="text" placeholder="your login" />
+            </div>
+
+            <div class="login-form-submit">
+                <input id="submit_btn" name="submit_btn" type="submit" value="LOGIN" />
+            </div>
+        </form>        
+    </div>
+    <script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+</body>
+</html>
